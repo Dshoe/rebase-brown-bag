@@ -18,6 +18,10 @@ If resolving with IntelliJ, open the "Version Control" panel and right click on 
 
 If resolving directly in the source code file, you'll see the conflicts broken up into two chunks of code. The first chunk is code from the branch you are rebasing onto (in this case `master`) and the second chunk is the feature branch you are rebasing from (in this case `feature`). To resolve the conflict, remove the extra characters and manually make the necessary edits.
 
+You can execute `git diff` to view the conflicted files and what their conflicts are.
+
+Once you have made your changes and are ready to continue the rebase, stage all the files with `git add {filename}` or `git add --all`, and then execute `git rebase --continue`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
